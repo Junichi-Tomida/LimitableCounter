@@ -50,19 +50,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwX-4R-hqR">
+                                <rect key="frame" x="68" y="230" width="77" height="30"/>
+                                <state key="normal" title="Limit Reset"/>
+                                <connections>
+                                    <action selector="LimitReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcD-9P-3J1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-aT-gEb">
+                                <rect key="frame" x="49.5" y="120" width="85" height="30"/>
+                                <state key="normal" title="Count Reset"/>
+                                <connections>
+                                    <action selector="CountReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGN-cc-htO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5yc-X8-4p0" firstAttribute="top" secondItem="3oJ-xk-ACN" secondAttribute="bottom" constant="30" id="D3e-bT-quc"/>
                             <constraint firstItem="kZr-qh-EzF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="HhG-q1-GRg"/>
                             <constraint firstItem="sel-iS-D3M" firstAttribute="top" secondItem="5yc-X8-4p0" secondAttribute="bottom" constant="30" id="K1c-wY-dMb"/>
+                            <constraint firstItem="kwX-4R-hqR" firstAttribute="top" secondItem="gAG-aT-gEb" secondAttribute="bottom" constant="80" id="PU1-dn-I6c"/>
                             <constraint firstItem="kZr-qh-EzF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q6b-Rh-FTV"/>
                             <constraint firstItem="eyH-dI-vgN" firstAttribute="top" secondItem="sel-iS-D3M" secondAttribute="bottom" constant="30" id="S4i-qz-suP"/>
                             <constraint firstItem="3oJ-xk-ACN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V7q-gz-d6x"/>
                             <constraint firstItem="eyH-dI-vgN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W6e-qH-j9M"/>
                             <constraint firstItem="3oJ-xk-ACN" firstAttribute="top" secondItem="kZr-qh-EzF" secondAttribute="bottom" constant="30" id="WJE-eA-0lY"/>
+                            <constraint firstItem="3oJ-xk-ACN" firstAttribute="leading" secondItem="gAG-aT-gEb" secondAttribute="trailing" constant="30" id="Z3n-UQ-F7D"/>
                             <constraint firstItem="5yc-X8-4p0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cw2-ql-yDi"/>
+                            <constraint firstItem="gAG-aT-gEb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="leD-lG-zN3"/>
                             <constraint firstItem="sel-iS-D3M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tbX-f3-dFn"/>
+                            <constraint firstItem="sel-iS-D3M" firstAttribute="leading" secondItem="kwX-4R-hqR" secondAttribute="trailing" constant="30" id="tzl-5j-MYw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

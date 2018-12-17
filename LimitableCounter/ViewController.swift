@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func CountButton(_ sender: Any) {
-        if(count != limit!){
+        if(count != limit! && count <= limit!){
         count = count + 1
         CountLabel.text = count.description
         }
@@ -31,6 +31,15 @@ class ViewController: UIViewController {
         LimitLabel.text = LimitField.text
         limit = Int(LimitField.text!)
         
+    }
+    @IBAction func CountReset(_ sender: Any) {
+        CountLabel.text = 0.description
+        count = 0
+    }
+    @IBAction func LimitReset(_ sender: Any) {
+        LimitLabel.text = 0.description
+        LimitField.text = ""
+        limit = 0
     }
 }
 
