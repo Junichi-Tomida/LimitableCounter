@@ -25,8 +25,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oJ-xk-ACN">
-                                <rect key="frame" x="164.5" y="121" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="154.5" y="121" width="66" height="30"/>
+                                <state key="normal" title="Count Up"/>
                                 <connections>
                                     <action selector="CountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAt-E6-BeF"/>
                                 </connections>
@@ -38,8 +38,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyH-dI-vgN">
-                                <rect key="frame" x="164.5" y="292" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="134.5" y="292" width="106" height="30"/>
+                                <state key="normal" title="Set Limit Count"/>
                                 <connections>
                                     <action selector="LimitBiutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bEr-Yi-9Wt"/>
                                 </connections>
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAG-aT-gEb">
-                                <rect key="frame" x="49.5" y="120" width="85" height="30"/>
+                                <rect key="frame" x="39.5" y="120" width="85" height="30"/>
                                 <state key="normal" title="Count Reset"/>
                                 <connections>
                                     <action selector="CountReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGN-cc-htO"/>
@@ -88,6 +88,10 @@
                         <outlet property="CountLabel" destination="kZr-qh-EzF" id="mBI-yl-rK7"/>
                         <outlet property="LimitField" destination="sel-iS-D3M" id="Pe5-Hy-ncq"/>
                         <outlet property="LimitLabel" destination="5yc-X8-4p0" id="iHv-Yd-any"/>
+                        <outlet property="counterButton" destination="3oJ-xk-ACN" id="rBb-zf-d6t"/>
+                        <outlet property="counterResetButton" destination="gAG-aT-gEb" id="wDJ-Re-Jgz"/>
+                        <outlet property="limitResetButton" destination="kwX-4R-hqR" id="8HM-st-UII"/>
+                        <outlet property="setLimitButton" destination="eyH-dI-vgN" id="Nce-eS-0Hz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
